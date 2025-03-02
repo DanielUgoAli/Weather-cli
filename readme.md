@@ -18,6 +18,12 @@ A command-line interface application to check weather information for any city d
 - See sunrise and sunset times for any location
 - Generate ASCII art with customizable fonts
 
+## Prerequisites
+
+- python 3.10 or higher
+- pip package manager
+- OpenWeatherMap API key
+
 ## Installation
 
 1. Clone this repository
@@ -40,7 +46,7 @@ pip install -r requirements.txt
 Run the application using the batch script:
 
 ```cmd
-cd weather-cli
+cd weather-cli\bin
 run.bat
 ```
 
@@ -49,8 +55,17 @@ run.bat
 Alternatively, run using PowerShell:
 
 ```powershell
-cd weather-cli
+cd weather-cli\bin
 .\run.ps1
+```
+
+### Linux/Mac
+
+For Linux and Mac users, run the following command:
+
+```bash
+cd weather-cli/bin
+./run.sh
 ```
 
 When the application starts, you will see the ASCII art title and a prompt:
@@ -62,7 +77,7 @@ Prompt🧭>>
 ### Available Commands
 
 - `hi` - Start the weather retrieval process (this is the main entry point)
-- `tempurature` - Display temperature information for a city
+- `temperature` - Display temperature information for a city
 - `humidity` - Show humidity information for a city
 - `suninfo` - Display sunrise and sunset times for a city
 - `art <text> [--font <font_name>]` - Generate ASCII art from text
@@ -74,24 +89,44 @@ Prompt🧭>>
 ```bash
 Prompt🧭>> hi
 City's Name: London
-[Temperature information will be displayed]
+Weather in London: Clear Sky
+Temperature: 15°C
+Humidity: 76%
+Wind: 3.6 m/s
 
-Prompt🧭>> tempurature
-[Temperature information will be displayed]
+Prompt🧭>> temperature
+City's Name: Tokyo
+Current Temperature: 25°C
+Feels Like: 26°C
+Min Temperature: 23°C
+Max Temperature: 27°C
 
 Prompt🧭>> humidity
-[Humidity information will be displayed]
+City's Name: New York
+Humidity: 65%
+Pressure: 1013 hPa
 
 Prompt🧭>> suninfo
-[Sunrise and sunset times will be displayed]
+City's Name: Sydney
+Sunrise: 05:48 AM
+Sunset: 07:52 PM
 
 Prompt🧭>> art Hello --font slant
-[ASCII art will be generated]
+   __  __     ____           
+  / / / /__  / / /___       
+ / /_/ / _ \/ / / __ \      
+/ __  /  __/ / / /_/ /      
+/_/ /_/\___/_/_/\____/
 ```
 
 ## API Key
 
-This application uses the OpenWeatherMap API. The repository includes a default API key, but if you plan to use this application extensively, it's recommended that you get your own API key from [OpenWeatherMap](https://openweathermap.org/api) and update it in the `soon` file.
+This application uses the OpenWeatherMap API. You'll need to get your own API key from [OpenWeatherMap](https://openweathermap.org/api) and add it to the `config.py` file. For reasons, I did not decided to remove the default API key in the repository.
+
+```python
+# config.py
+API_KEY = "your_api_key_here"
+```
 
 ## Dependencies
 
@@ -102,6 +137,4 @@ This application uses the OpenWeatherMap API. The repository includes a default 
 
 Contributions, issues, and feature requests are welcome!
 
-## 🙏
-
- [@ziverch](https://github.com/ziverch) for original project at [repository](https://github.com/ziverch/Weather-cli)
+🙏 [ziverch](https://github.com/ziverch) for original project at [repository](https://github.com/ziverch/Weather-cli)
