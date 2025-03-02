@@ -171,5 +171,5 @@ cython_debug/
 .pypirc
 
 # Ignore specific files
-data.json
-test.py
+src/data.json
+src/test.py
