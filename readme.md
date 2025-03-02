@@ -21,7 +21,6 @@ A command-line interface application to check weather information for any city d
 ## Prerequisites
 
 - python 3.10 or higher
-- pip package manager
 - OpenWeatherMap API key
 
 ## Installation
