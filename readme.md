@@ -120,7 +120,7 @@ Prompt🧭>> art Hello --font slant
 
 ## API Key
 
-This application uses the OpenWeatherMap API. You'll need to get your own API key from [OpenWeatherMap](https://openweathermap.org/api) and add it to the `config.py` file. For reasons, I did not decided to remove the default API key in the repository.
+This application uses the OpenWeatherMap API. You'll need to get your own API key from [OpenWeatherMap](https://openweathermap.org/api) and add it to the `config.py` file. For reasons, I decided to remove the default API key in the repository.
 
 ```python
 # config.py
