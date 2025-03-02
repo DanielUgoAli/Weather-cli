@@ -37,7 +37,7 @@ pip install -r requirements.txt
 
 ### Windows
 
-Run the application using the batch script (automatically installs Python and dependencies if needed):
+Run the application using the batch script:
 
 ```cmd
 cd weather-cli
