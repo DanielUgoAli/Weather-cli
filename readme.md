@@ -35,10 +35,22 @@ pip install -r requirements.txt
 
 ## Usage
 
-Run the application:
+### Windows
 
-```bash
-python cli.py
+Run the application using the batch script (automatically installs Python and dependencies if needed):
+
+```cmd
+cd weather-cli
+run.bat
+```
+
+### PowerShell
+
+Alternatively, run using PowerShell:
+
+```powershell
+cd weather-cli
+.\run.ps1
 ```
 
 When the application starts, you will see the ASCII art title and a prompt:
