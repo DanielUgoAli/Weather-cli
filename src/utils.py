@@ -2,7 +2,7 @@ import datetime as dt
 import json
 
 
-def tempurature(city: str, data: json):
+def temperature(city: str, data: json):
     country_name = data["sys"]["country"]
     temp_in_celsius = (data["main"]["temp"])
     temp_in_fahrenheit = temp_in_celsius * (9/5) + 32
