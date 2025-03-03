@@ -29,7 +29,7 @@ A **command-line interface (CLI) application** to check weather information for 
 ## **Installation**
 ### **1. Clone This Repository**
 ```bash
-git clone https://github.com/yourusername/weather-cli.git
+git clone https://github.com/DanielUgoAli/weather-cli.git
 cd weather-cli
 ```
 
